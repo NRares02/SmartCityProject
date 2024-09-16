@@ -24,7 +24,7 @@
           <input v-model="formData.phoneNumber" type="text" placeholder="Phone Number" required />
         </div>
         <div class="form-actions">
-          <button type="submit" class="sign-up">Complete Sign Up</button>
+          <button type="submit" class="sign-up">Complete register</button>
           <button type="button" class="sign-in" @click="$emit('close')">Close</button>
         </div>
       </form>

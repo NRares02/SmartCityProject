@@ -3,14 +3,16 @@ import HomePage from './components/HomePage.vue';
 import ServiceRequests from './components/ServiceRequests.vue';
 import PaymentPage from './components/PaymentPage.vue';
 import RegisterPage from './components/RegisterPage.vue';
-import UserPage from './components/UserPage.vue';
+import UserPage from './components/UserPage.vue'; // Import UserPage.vue
+import RealTimeData from './components/RealTimeData.vue';
 
 const routes = [
   { path: '/', component: HomePage },
   { path: '/service-requests', component: ServiceRequests },
   { path: '/payments', component: PaymentPage },
-  { path: '/register', component: RegisterPage }, // Route for registration
-  { path: '/user-page', component: UserPage }, // Route for user page
+  { path: '/register', component: RegisterPage },
+  { path: '/user', component: UserPage }, // Add this route for UserPage.vue
+  { path: '/real-time-data', component: RealTimeData },
   { path: '/:pathMatch(.*)*', redirect: '/' }, // Redirect to home on 404
 ];
 
@@ -20,3 +22,4 @@ const router = createRouter({
 });
 
 export default router;
+
